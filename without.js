@@ -8,17 +8,18 @@ const assertEqual = function(actual, expected) {
 
 const assertArraysEqual = function(actual, expected) {
   if (actual.length !== expected.length) {
-    return false;
+    return console.log(`❌️ Assertion Failed: ${actual} !== ${expected}`);
   } else {
     for (let i = 0; i < actual.length; i++) {
       if (actual[i] !== expected[i]) {
-        return false;
+        return console.log(`❌️ Assertion Failed: ${actual} !== ${expected}`);
       }
     }
-    return true;
+    return console.log(`👍️ Assertion Passed: ${actual} === ${expected}`);
   }
 };
 
+// check to see if the target is within an array
 const checkItem = function(target, array) {
   for (let item of array) {
     if (item === target) {
@@ -43,7 +44,7 @@ const without = function(source, itemsToRemove) {
 // test without function
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
-console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 console.log(without([1, 2, 3], [1])); // output [2, 3]
 console.log(without([1, 2, 3, 4, 5], [1, 3, 5])); // output [2, 4]
