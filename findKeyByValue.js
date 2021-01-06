@@ -17,14 +17,14 @@ const findKeyByValue = function(showsList, specificShow) {
   }
   // console.log(output);
   return output;
-}
+};
 
 
 
 
 // test drivers
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
