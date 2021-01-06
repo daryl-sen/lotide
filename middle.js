@@ -26,10 +26,10 @@ const middle = function(array) {
     let halfwayPoint = array.length / 2 - 1;
     return [array[halfwayPoint], array[halfwayPoint + 1]];
   } else {
-    let halfwayPoint = Math.floor(array.length/2);
+    let halfwayPoint = Math.floor(array.length / 2);
     return [array[halfwayPoint]];
   }
-}
+};
 
 console.log(middle(['a']));
 console.log(middle(['a','b']));

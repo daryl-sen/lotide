@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   let output = {};
   for (let entry in itemsToCount) {
-    if (allItems.includes(entry) && itemsToCount[entry] === true) {
+    if (allItems.includes(entry) && itemsToCount[entry]) {
       output[entry] = 0;
       for (let item of allItems) {
         if (item === entry) {
@@ -20,7 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
   }
   // console.log(output);
   return output;
-}
+};
 
 
 
