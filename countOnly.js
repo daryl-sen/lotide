@@ -9,10 +9,12 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   let output = {};
   for (let entry in itemsToCount) {
-    output[entry] = 0;
-    for (let item of allItems) {
-      if (item === entry) {
-        output[entry]++;
+    if (allItems.includes(entry) && itemsToCount[entry] === true) {
+      output[entry] = 0;
+      for (let item of allItems) {
+        if (item === entry) {
+          output[entry]++;
+        }
       }
     }
   }
@@ -21,7 +23,10 @@ const countOnly = function(allItems, itemsToCount) {
 }
 
 
-countOnly(['a','a','b','b','b','c'], {a: true, b: true});
+
+
+
+// test drivers
 
 
 const firstNames = [
