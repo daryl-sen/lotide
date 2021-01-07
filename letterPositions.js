@@ -21,13 +21,13 @@ const assertEqual = function(actual, expected) {
 
 
 const letterPositions = function(sentence) {
-  const noSpaces = sentence.split(" ").join("");
+  // const noSpaces = sentence.split(" ").join("");
   let output = {};
-  for (let i = 0; i < noSpaces.length; i++) {
-    if (noSpaces[i] in output) {
-      output[noSpaces[i]].push(i);
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] in output) {
+      output[sentence[i]].push(i);
     } else {
-      output[noSpaces[i]] = [i];
+      output[sentence[i]] = [i];
     }
   }
   // console.log(output);
