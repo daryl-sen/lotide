@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@daryl-sen/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of useful functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/daryl-sen/lotide.git"
   },
-  "author": "",
+  "author": "Daryl",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daryl-sen/lotide/issues"
