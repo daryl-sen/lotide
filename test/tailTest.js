@@ -1,10 +1,6 @@
 const tail = require('../tail');
 const assert = require('chai').assert.deepEqual;
 
-// assertArraysEqual(tail([4,5,6,7]), [5,6,7]);
-// assertArraysEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
-// assertArraysEqual(tail([]), []);
-
 describe('tail.js', () => {
   it('returns [5,6,7] when the input is [4,5,6,7]', () => {
     let input = [4,5,6,7];
